@@ -17,7 +17,7 @@ The AWS CLI must be configured in the system where you are running the script fr
 
 ## Usage
 The following diagram summarizes the script lifecycle.
-
+![alt text](https://github.com/aws-samples/automatic-copy-ec2-from-one-region-to-another-through-ami/blob/master/copyami.png?raw=true)
 1.	Save all ECs’ instance ID in file id, the file format should look like shown below:
 i-0d92e9afb6da335cb
 i-0df1ddea5b40691fa
