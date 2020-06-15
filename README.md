@@ -19,7 +19,10 @@ The AWS CLI must be configured in the system where you are running the script fr
 The following diagram summarizes the script lifecycle.
 ![alt text](https://github.com/aws-samples/automatic-copy-ec2-from-one-region-to-another-through-ami/blob/master/copyami.png?raw=true)
 1.	Save all ECs’ instance ID in file id, the file format should look like shown below:
-i-0d92e9afb6da335cb  i-0df1ddea5b40691fa  i-01d23c7b37272053f  i-011c54507150ae6ff
+<br>i-0d92e9afb6da335cb
+<br>i-0df1ddea5b40691fa
+<br>i-01d23c7b37272053f
+<br>i-011c54507150ae6ff
 2.	Keep the user profile in source region as default AWS CLI configuration
 3.	Execute the shell
 ./copyami.sh
