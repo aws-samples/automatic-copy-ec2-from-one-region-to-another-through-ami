@@ -29,10 +29,10 @@ The following diagram summarizes the script lifecycle.
 4.	Enter the Source region and Destination region
 
 The script will create the first file id-image-src which is used to save all EC2 instance ID and AMI ID, so you can check which ECs have created the AMI.
-The file imageid-src is used to save AMI ID so the script can use the describe-images API to check the status of the creating AMI task.
-The file id-src is used to compare with id-image-src to see whether the AMI successfully created or not.
-The file imageid-dst and id-image-src are used to save AMI id so the script can use describe-images API to check the status of the copying AMI task and which AMIs are copied to the destination region.
-The file src-imageid-dst is used to compare with imageid-src to see whether the AMI successfully copied or not.
+<br>The file imageid-src is used to save AMI ID so the script can use the describe-images API to check the status of the creating AMI task.
+<br>The file id-src is used to compare with id-image-src to see whether the AMI successfully created or not.
+<br>The file imageid-dst and id-image-src are used to save AMI id so the script can use describe-images API to check the status of the copying AMI task and which AMIs are copied to the destination region.
+<br>The file src-imageid-dst is used to compare with imageid-src to see whether the AMI successfully copied or not.
 
 ## Known Limitations
 This script will not work if exceed 50 EC2s because the destination regions are limited to 50 concurrent AMI copies, please refer to https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/CopyingAMIs.html
